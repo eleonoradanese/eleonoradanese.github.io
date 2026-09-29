@@ -608,7 +608,7 @@ main > .section:first-child {
 /* ---------- about ---------- */
 #about.section {
   display: block;
-  padding-top: clamp(20px, 3vw, 40px);
+  padding-top: clamp(110px, 12vw, 150px);
 }
 
 .about__intro {
