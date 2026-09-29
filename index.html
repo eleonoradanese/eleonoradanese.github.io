@@ -22,16 +22,32 @@
 <body>
 
 <header class="nav">
-  <a href="#top" class="nav__brand" aria-label="Eleonora Danese — home">ED</a>
-  <nav>
+  <div class="nav__left">
+    <a href="#top" class="nav__brand">ED</a>
+    <span class="nav__sep">/</span>
+    <span class="nav__role">Music Supervisor</span>
+  </div>
+  <nav class="nav__center">
     <ul class="nav__list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#talks">Talks &amp; Press</a></li>
+      <li><a href="#about" data-en="About" data-it="Chi sono">About</a></li>
+      <li><a href="#work" data-en="Work" data-it="Lavori">Work</a></li>
+      <li><a href="#talks" data-en="Talks &amp; Press" data-it="Interventi">Talks &amp; Press</a></li>
       <li><a href="#kuni">Kuni</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" data-en="Contact" data-it="Contatti">Contact</a></li>
     </ul>
   </nav>
+  <div class="nav__right">
+    <div class="nav__lang-wrap">
+      <button class="nav__lang-btn" id="langEn" onclick="setLang('en')">🇬🇧 ENG</button>
+      <span class="nav__lang-sep">·</span>
+      <button class="nav__lang-btn" id="langIt" onclick="setLang('it')">🇮🇹 ITA</button>
+    </div>
+    <div class="nav__otw">
+      <span class="nav__otw-dot"></span>
+      <span>Open to Work</span>
+      <span class="nav__otw-date" id="otwDate"></span>
+    </div>
+  </div>
 </header>
 
 <main id="top">

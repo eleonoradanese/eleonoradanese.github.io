@@ -1,6 +1,27 @@
 // year stamp
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// open to work date (updates daily)
+const otwDate = document.getElementById("otwDate");
+if (otwDate) {
+  otwDate.textContent = "· " + new Date().toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+}
+
+// language toggle
+function setLang(lang) {
+  localStorage.setItem("lang", lang);
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.textContent = lang === "it" ? el.dataset.it : el.dataset.en;
+  });
+  const enBtn = document.getElementById("langEn");
+  const itBtn = document.getElementById("langIt");
+  if (enBtn) enBtn.classList.toggle("active", lang === "en");
+  if (itBtn) itBtn.classList.toggle("active", lang === "it");
+}
+
+const savedLang = localStorage.getItem("lang") || "en";
+setLang(savedLang);
+
 // reveal on scroll
 const io = new IntersectionObserver(
   (entries) => {
