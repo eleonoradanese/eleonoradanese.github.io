@@ -7,6 +7,13 @@ if (otwDate) {
   otwDate.textContent = "· " + new Date().toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 }
 
+// hero meta date
+const heroDate = document.getElementById("heroDate");
+if (heroDate) {
+  const d = new Date();
+  heroDate.textContent = d.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", year: "numeric" }).toUpperCase();
+}
+
 // language toggle
 function setLang(lang) {
   localStorage.setItem("lang", lang);
