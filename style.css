@@ -1280,6 +1280,50 @@ a { color: inherit; text-decoration: none; }
   border-color: var(--coral);
 }
 
+/* ---------- clients bar ---------- */
+.clients-bar {
+  overflow: hidden;
+  border-top: 1px solid var(--rule-ink);
+  padding: 16px 0;
+  background: var(--bg);
+  user-select: none;
+}
+
+.clients-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  animation: marquee 36s linear infinite;
+  white-space: nowrap;
+}
+
+.clients-bar:hover .clients-track {
+  animation-play-state: paused;
+}
+
+.clients-track__item {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  opacity: 0.55;
+  padding: 0 28px;
+}
+
+.clients-track__sep {
+  font-size: 9px;
+  color: var(--ink-faint);
+  opacity: 0.25;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 /* ---------- home nav grid ---------- */
 .nav-grid {
   display: grid;
