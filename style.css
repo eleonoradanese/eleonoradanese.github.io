@@ -215,7 +215,7 @@ a { color: inherit; text-decoration: none; }
 .hero {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  min-height: 58vh;
+  min-height: 46vh;
   margin: 0;
   padding: 0;
   max-width: none;
