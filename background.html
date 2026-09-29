@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Background — Eleonora Danese</title>
+<meta name="description" content="Eleonora Danese — experience, languages and tools." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__left">
+    <a href="index.html" class="nav__brand">ED</a>
+    <span class="nav__sep">/</span>
+    <span class="nav__role">Music Supervisor</span>
+  </div>
+  <nav class="nav__center">
+    <ul class="nav__list">
+      <li><a href="about.html" data-en="This is me" data-it="Chi sono">This is me</a></li>
+      <li><a href="productions.html" data-en="Productions" data-it="Lavori">Productions</a></li>
+      <li><a href="background.html" data-en="Background" data-it="Background">Background</a></li>
+      <li><a href="talks.html" data-en="Talks &amp; Press" data-it="Interventi">Talks &amp; Press</a></li>
+      <li><a href="kuni.html">Kuni</a></li>
+      <li><a href="contact.html" data-en="Contact" data-it="Contatti">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav__right">
+    <div class="nav__lang-wrap">
+      <button class="nav__lang-btn" id="langEn" onclick="setLang('en')">🇬🇧 ENG</button>
+      <span class="nav__lang-sep">·</span>
+      <button class="nav__lang-btn" id="langIt" onclick="setLang('it')">🇮🇹 ITA</button>
+    </div>
+    <div class="nav__otw">
+      <span class="nav__otw-dot"></span>
+      <span>Open to Work</span>
+      <span class="nav__otw-date" id="otwDate"></span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="background" class="section section--background" data-reveal>
+
+    <header class="section__head">
+      <p class="section__num">03</p>
+      <h2 class="section__title">Background</h2>
+    </header>
+
+    <div class="bg-grid">
+
+      <div class="card card--cream">
+        <p class="card__eyebrow">Experience</p>
+        <ul class="bg-list">
+          <li><span>'22 — today</span><strong>Music Supervisor</strong><em>Freelance</em></li>
+          <li><span>'22 — '24</span><strong>Music Supervisor &amp; Coordinator</strong><em>Groenlandia Srl (Banijay Group)</em></li>
+          <li><span>2021</span><strong>Music Consultant &amp; Social Media Manager</strong><em>Operà Music</em></li>
+          <li><span></span><strong>Founder &amp; Creative Director</strong><em>Tuttifrutti — collective of creatives for independent music</em></li>
+          <li><span></span><strong>Playlist Editor</strong><em>Futura1993</em></li>
+          <li><span>'17</span><strong>Promoter &amp; Communication Assistant</strong><em>Radar Concerti</em></li>
+          <li><span>'16 — '19</span><strong>Project Manager</strong><em>Bravo Dischi</em></li>
+          <li><span></span><strong>Band Manager</strong><em>Moblon · Chiara Monaldi · Edoardo Baroni</em></li>
+          <li><span>'16</span><strong>Production · Band Assistant · Backstage Manager</strong><em>Villa Ada Roma Incontra il Mondo · Viteculture</em></li>
+          <li><span>'14 — '19</span><strong>Music Editor</strong><em>L'Indiependente</em></li>
+          <li><span>'11 — '12</span><strong>Talent Scout &amp; Event Manager</strong><em>Traffic Live Club</em></li>
+          <li><span>'18 — '22</span><strong>Art Director &amp; Graphic Designer (freelance)</strong><em>Walk In · Arkage (Artattack Group) · RCS Mediagroup · Gruppo Roncaglia</em></li>
+        </ul>
+      </div>
+
+      <div class="bg-side">
+        <div class="card card--cream">
+          <p class="card__eyebrow">Languages</p>
+          <ul class="lang-list">
+            <li><strong>Italian</strong><span>Mother tongue</span></li>
+            <li><strong>English</strong><span>C2</span></li>
+            <li><strong>French</strong><span>A2</span></li>
+            <li><strong>Japanese</strong><span>A1</span></li>
+            <li><strong>Korean</strong><span>A1</span></li>
+          </ul>
+        </div>
+
+        <div class="card card--cream">
+          <p class="card__eyebrow">Tools</p>
+          <ul class="lang-list lang-list--tools">
+            <li><strong>Adobe Suite</strong><span>Illustrator · Photoshop · InDesign · After Effects · Premiere</span></li>
+            <li><strong>Microsoft Office</strong><span>Word · Excel · PowerPoint · Outlook</span></li>
+          </ul>
+
+          <p class="card__subhead">Platforms &amp; Softwares</p>
+          <ul class="lang-list lang-list--tools">
+            <li><strong>Basecamp</strong><span></span></li>
+            <li><strong>Cuetrak</strong><span></span></li>
+            <li><strong>Discogs</strong><span></span></li>
+            <li><strong>SoundCloud</strong><span></span></li>
+            <li><strong>Soundmouse</strong><span></span></li>
+            <li><strong>Spotify</strong><span></span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Eleonora Danese</p>
+  <p class="footer__colophon">Set in Bebas Neue &amp; Inter</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

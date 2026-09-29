@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Kuni — Eleonora Danese</title>
+<meta name="description" content="Kuni — songwriter project by Eleonora Danese. Rome-based folk-pop singer-songwriter." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__left">
+    <a href="index.html" class="nav__brand">ED</a>
+    <span class="nav__sep">/</span>
+    <span class="nav__role">Music Supervisor</span>
+  </div>
+  <nav class="nav__center">
+    <ul class="nav__list">
+      <li><a href="about.html" data-en="This is me" data-it="Chi sono">This is me</a></li>
+      <li><a href="productions.html" data-en="Productions" data-it="Lavori">Productions</a></li>
+      <li><a href="background.html" data-en="Background" data-it="Background">Background</a></li>
+      <li><a href="talks.html" data-en="Talks &amp; Press" data-it="Interventi">Talks &amp; Press</a></li>
+      <li><a href="kuni.html">Kuni</a></li>
+      <li><a href="contact.html" data-en="Contact" data-it="Contatti">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav__right">
+    <div class="nav__lang-wrap">
+      <button class="nav__lang-btn" id="langEn" onclick="setLang('en')">🇬🇧 ENG</button>
+      <span class="nav__lang-sep">·</span>
+      <button class="nav__lang-btn" id="langIt" onclick="setLang('it')">🇮🇹 ITA</button>
+    </div>
+    <div class="nav__otw">
+      <span class="nav__otw-dot"></span>
+      <span>Open to Work</span>
+      <span class="nav__otw-date" id="otwDate"></span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="kuni" class="section section--kuni" data-reveal>
+
+    <header class="section__head">
+      <p class="section__num">05</p>
+      <h2 class="section__title">Kuni</h2>
+      <p class="section__years">2022 — today</p>
+    </header>
+
+    <div class="section__lede">
+      <p>
+        Kuni — short for Kunimitsu, one of the main characters from the video game Tekken — writes songs in Rome. She had a punk-rock band in high school where she sang and sometimes played the guitar, but she started writing her first songs only in 2019, and they immediately felt like a nice starting point: a well-balanced combination of her artistic influences, putting together sincere lyrics, folk-pop melodies, and punk-rock chords. Kuni released her first EP, <em>"Walls Have Told Me"</em>, via
+        <a href="https://www.factoryflaws.net/" target="_blank" rel="noopener" class="link-soft">Factory Flaws</a>
+        in June 2023. Three more singles followed during 2024: <em>"My Best"</em>, <em>"Showu"</em>, and <em>"Supposed To Be"</em>. 2026 is the year when Kuni will release new songs, which will anticipate her first full-length album, coming out in the autumn.
+      </p>
+    </div>
+
+    <div class="spotify">
+      <iframe
+        title="Kuni on Spotify"
+        src="https://open.spotify.com/embed/artist/3NRwU9dSKi9QKRDnsQI9pG?utm_source=generator"
+        loading="lazy"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Eleonora Danese</p>
+  <p class="footer__colophon">Set in Bebas Neue &amp; Inter</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
