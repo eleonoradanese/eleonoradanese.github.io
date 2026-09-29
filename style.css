@@ -512,8 +512,10 @@ main > .section:first-child {
   font-size: clamp(16px, 1.5vw, 20px);
   line-height: 1.55;
   color: var(--ink-soft);
-  margin: 0;
+  margin: 0 0 1.1em;
 }
+
+.section__lede p:last-child { margin-bottom: 0; }
 
 .section__lede em { color: var(--coral); font-style: italic; }
 
