@@ -1,24 +1,25 @@
-/* ---------- tokens — coral × cream (CV palette) ---------- */
+/* ---------- tokens — lilac × violet × red ---------- */
 :root {
-  --bg:        #f5e2dd;   /* pale pink/peach blush */
-  --bg-2:      #efd6cf;   /* slightly deeper blush */
-  --cream:     #fff4ef;   /* lightest cream */
-  --coral:     #ff6066;   /* CV accent */
-  --coral-deep:#e84c54;
-  --ink:       #1f1614;   /* warm near-black for body */
-  --ink-soft:  #5a4441;
-  --ink-faint: #9a807b;
+  --bg:        #eee9f7;   /* pale lilac */
+  --bg-2:      #e4ddf0;   /* slightly deeper lilac */
+  --cream:     #f5f1fd;   /* lightest lilac-tinted */
+  --red:       #e53535;   /* vivid red — display titles only */
+  --coral:     #6b5ce7;   /* violet accent (replaces coral throughout) */
+  --coral-deep:#5548d4;
+  --ink:       #181520;   /* near-black with purple hint */
+  --ink-soft:  #4a4460;
+  --ink-faint: #9490b0;
   --white:     #ffffff;
 
-  --rule:      rgba(255, 96, 102, 0.22);
-  --rule-soft: rgba(255, 96, 102, 0.10);
-  --rule-ink:  rgba(31, 22, 20, 0.08);
+  --rule:      rgba(107, 92, 231, 0.22);
+  --rule-soft: rgba(107, 92, 231, 0.10);
+  --rule-ink:  rgba(24, 21, 32, 0.08);
 
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
 
-  --font-display: "Archivo Black", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Bebas Neue", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-sans:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   --max:   1240px;
@@ -62,7 +63,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
   padding: 16px var(--pad-x);
   z-index: 100;
-  background: rgba(245, 226, 221, 0.78);
+  background: rgba(238, 233, 247, 0.85);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
   border-bottom: 1px solid var(--rule-soft);
@@ -458,7 +459,7 @@ a { color: inherit; text-decoration: none; }
 
 .credit:hover {
   padding-left: 14px;
-  background: linear-gradient(90deg, rgba(255, 96, 102, 0.07), transparent 70%);
+  background: linear-gradient(90deg, rgba(107, 92, 231, 0.07), transparent 70%);
 }
 
 .credit__year {
@@ -517,7 +518,7 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
   background: var(--cream);
   border: 1px solid var(--rule-soft);
-  box-shadow: 0 30px 60px -40px rgba(232, 76, 84, 0.35);
+  box-shadow: 0 30px 60px -40px rgba(107, 92, 231, 0.25);
 }
 
 .spotify iframe {
@@ -1064,3 +1065,20 @@ a { color: inherit; text-decoration: none; }
   color: var(--coral);
   border-color: var(--coral);
 }
+
+/* ---------- red display overrides ---------- */
+.hero__name,
+.section__title,
+.cred-group__title,
+.project__title,
+.contact__title { color: var(--red); }
+
+.hero__role { color: var(--coral); }
+
+.section__head { border-bottom-color: var(--red); }
+.project__hero { border-bottom-color: var(--red); }
+.section__head--project { border-bottom-color: var(--red); }
+
+.credits { border-top-color: var(--red); }
+
+.flat-list--about a { color: var(--coral); }
